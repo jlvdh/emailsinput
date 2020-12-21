@@ -34,7 +34,7 @@
             var lastnames = ['snow', 'bolton', 'lannister', 'stark', 'clegane'];
 
             var email = pickRandom(firstNames) + '.' + pickRandom(lastnames) + '@miro.com';
-            inputContainerNode.value = inputContainerNode.value ? inputContainerNode.value +
+            input.value = input.value ? input.value +
                 ',' + email : email;
         })
 
@@ -49,10 +49,10 @@
         showEmailCountButton.addEventListener('click', function (e) {
             e.preventDefault();
             var count;
-            if (!inputContainerNode.value) {
+            if (!input.value) {
                 count = 0
             } else {
-                var emailAddresses = inputContainerNode.value.split(',');
+                var emailAddresses = input.value.split(',');
                 count = emailAddresses.length
             }
             alert(count)
