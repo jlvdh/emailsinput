@@ -1,11 +1,11 @@
-## emails input
+# emails input
 
 This component is part of an assignment for Miro. Emailsinput provides an input like:
 
 ![screenshot](https://github.com/jlvdh/emailsinput/blob/master/screenshot.png?raw=true)
 
 [demo](https://jlvdh.github.io/emailsinput/)
-build, run, test instructions
+## build, run, test instructions
 
 ```
 yarn install

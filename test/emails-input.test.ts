@@ -11,7 +11,7 @@ document.body.appendChild(container);
 describe('emailsinput', () => {
   it('matches snapshot', () => {
     const input = document.getElementById('emailsinput');
-    create((input as HTMLInputElement));
+    create(input as HTMLInputElement);
     expect(container).toMatchSnapshot();
   });
 
