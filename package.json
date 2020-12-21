@@ -13,7 +13,8 @@
   "scripts": {
     "start": "tsdx watch --format umd",
     "build": "tsdx build --format umd",
-    "test": "tsdx test --watchAll",
+    "test": "tsdx test",
+    "test:dev": "tsdx test --watchAll",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
