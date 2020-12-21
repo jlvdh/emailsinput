@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+button {
+    background: #4262ff;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+    padding: 10px 16px;
+}
+
+h2 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #050038;
+}
+
+b {
+    font-weight: 700;
+}
+
+#main-form {
+    border-radius: 8px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    width: 75%;
+    margin: 20px auto;
+}
+
+#main-form-top {
+    background: #F8F8F7;
+    padding: 32px 50px 24px 50px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+#main-form-footer {
+    background:#ffffff;
+    padding: 24px 50px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+#add-email {
+    margin-right: 16px;
+}

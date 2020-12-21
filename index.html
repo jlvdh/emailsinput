@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emails input</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form id="main-form">
+        <div id="main-form-top">
+            <h2>Share <b>Board name</b> with others</h2>
+            <input id="emails-input" type="email" />
+        </div>
+        <div id="main-form-footer">
+            <button id="add-email">Add email</button>
+            <button id="show-email-count">Get emails count</button>
+        </div>
+    </form>
+
+    <script src='./dist/emailsinput.umd.development.js'></script>
+
+    <script>
+        var input = document.getElementById('emails-input');
+        var emailsInput = emailsinput.create(input);
+
+        // add email
+        var addEmailButton = document.getElementById('add-email');
+        addEmailButton.addEventListener('click', function (e) {
+            e.preventDefault();
+            var firstNames = ['john', 'jaimy', 'gregor', 'arya', 'ned', 'daenearys'];
+            var lastnames = ['snow', 'bolton', 'lannister', 'stark', 'clegane'];
+
+            var email = pickRandom(firstNames) + '.' + pickRandom(lastnames) + '@miro.com';
+            inputContainerNode.value = inputContainerNode.value ? inputContainerNode.value +
+                ',' + email : email;
+        })
+
+        var pickRandom = function (arr) {
+            var total = arr.length;
+            var index = Math.floor(Math.random() * arr.length);
+            return arr[index]
+        }
+
+        // count
+        var showEmailCountButton = document.getElementById('show-email-count');
+        showEmailCountButton.addEventListener('click', function (e) {
+            e.preventDefault();
+            var count;
+            if (!inputContainerNode.value) {
+                count = 0
+            } else {
+                var emailAddresses = inputContainerNode.value.split(',');
+                count = emailAddresses.length
+            }
+            alert(count)
+        })
+    </script>
+</body>
+
+</html>
