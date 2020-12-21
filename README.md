@@ -4,6 +4,7 @@ This component is part of an assignment for Miro. Emailsinput provides an input 
 
 ![screenshot](https://github.com/jlvdh/emailsinput/blob/master/screenshot.png?raw=true)
 
+[demo](https://jlvdh.github.io/emailsinput/)
 build, run, test instructions
 
 ```
