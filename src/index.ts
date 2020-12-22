@@ -128,7 +128,6 @@ class EmailsInput {
   };
 
   private handleKeyInput = (e: KeyboardEvent) => {
-    console.log(e.type);
     const { value } = e.target as HTMLInputElement;
     if (isActionKey(e.key)) {
       // prevent default to prevent ',' being added to input
