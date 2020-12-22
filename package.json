@@ -34,14 +34,9 @@
   },
   "name": "emailsinput",
   "author": "Jorg van der Ham",
-  "module": "dist/miro-assignment.esm.js",
   "size-limit": [
     {
-      "path": "dist/miro-assignment.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/miro-assignment.esm.js",
+      "path": "dist/emailsinput.umd.production.min.js",
       "limit": "10 KB"
     }
   ],
